@@ -16,8 +16,8 @@ lis[i].innerHTML=parseInt(lis[i].innerHTML)+n
 function deepestChild() {
   var divs=document.getElementById("grand-node").querySelectorAll("div");
   var deepest;
-  for(let i=0;i<divs.length-1;i++) {
-    deepest=divs[i].querySelector("div");
-  }
+   
+  deepest=divs[parseInt(divs.length-1)].querySelector("div");
+
 return deepest
 }
